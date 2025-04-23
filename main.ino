@@ -1,53 +1,59 @@
-// #define FORWARD1 4
-// #define BACK1 5
-// #define FORWARD2 6
-// #define BACK2 7
-// #define FORWARD3 9
-// #define BACK3 10
-// #define FORWARD4 11
-// #define BACK4 12
-#define LEFT_FORWARD 4
-#define LEFT_BACK 5
-#define RIGHT_FORWARD 6
-#define RIGHT_BACK 7
+#include "motor.h"
 
 void setup() {
-    /*
-  pinMode(FORWARD1, OUTPUT);
-  pinMode(back1, OUTPUT);
-  
-  pinMode(FORWARD2, OUTPUT);
-  pinMode(back2, OUTPUT);
-
-  pinMode(FORWARD3, OUTPUT);
-  pinMode(back3, OUTPUT);
-
-  pinMode(FORWARD4, OUTPUT);
-  pinMode(back4, OUTPUT);
-  // put your setup code here, to run once:
-*/
   Serial.begin(115200);
-  pinMode(LED_BUILTIN, OUTPUT);
-  pinMode(LEFT_FORWARD, OUTPUT);
-  pinMode(LEFT_BACK, OUTPUT);
-  pinMode(RIGHT_FORWARD, OUTPUT);
-  pinMode(RIGHT_BACK, OUTPUT)
-
+  //stop_motor();
+}
+/*
+void stop_left_motor() {
+  digitalWrite(LEFT_FORWARD, LOW);
+  digitalWrite(LEFT_BACK, LOW);
+  analogWrite(LEFT_SPEED, 0);
 }
 
-void loop() {
-  //Serial.printf("hello world\r\n");
-  //delay(1000);
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);
-  analogWrite(FORWARD1, 200);
-  delay(1000);
-  analogWrite(FORWARD2, 200);
-  delay(1000);
-  analogWrite(FORWARD3, 200);
-  printf("123\n");
-  // put your main code here, to run repeatedly:
+void stop_right_motor() {
+  digitalWrite(RIGHT_FORWARD, LOW);
+  digitalWrite(RIGHT_BACK, LOW);
+  analogWrite(RIGHT_SPEED, 0);
+}
 
+void stop_motor() {
+  stop_left_motor();
+  stop_right_motor();
+}
+
+const int DEFAULT_SPEED = 255;
+void left_motor_forward(int speed = DEFAULT_SPEED) {
+  analogWrite(LEFT_SPEED, speed);
+  digitalWrite(LEFT_FORWARD, HIGH);
+  digitalWrite(LEFT_BACK, LOW);
+}
+
+void left_motor_back(int speed = DEFAULT_SPEED) {
+  analogWrite(LEFT_SPEED, speed);
+  digitalWrite(LEFT_FORWARD, LOW);
+  digitalWrite(LEFT_BACK, HIGH);
+}
+
+void right_motor_forward(int speed = DEFAULT_SPEED) {
+  analogWrite(RIGHT_SPEED, speed);
+  digitalWrite(RIGHT_FORWARD, HIGH);
+  digitalWrite(RIGHT_BACK, LOW);
+}
+
+void right_motor_back(int speed = DEFAULT_SPEED) {
+  analogWrite(RIGHT_SPEED, speed);
+  digitalWrite(RIGHT_FORWARD, LOW);
+  digitalWrite(RIGHT_BACK, HIGH);
+}*/
+
+void loop() {
+  /*
+  stop_motor();
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(6000);
+  digitalWrite(LED_BUILTIN, HIGH);
+  left_motor_forward(200);
+  delay(6000);
+*/
 }
