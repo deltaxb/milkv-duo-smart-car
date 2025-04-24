@@ -1,59 +1,32 @@
 #include "motor.h"
+#include "hc_sr04.h"
+
+void light_LED(int time) {
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(time);
+  digitalWrite(LED_BUILTIN, LOW);
+}
 
 void setup() {
   Serial.begin(115200);
-  //stop_motor();
-}
-/*
-void stop_left_motor() {
-  digitalWrite(LEFT_FORWARD, LOW);
-  digitalWrite(LEFT_BACK, LOW);
-  analogWrite(LEFT_SPEED, 0);
-}
+  Serial.println("start setup");
+  pinMode(LED_BUILTIN, OUTPUT);
+  light_LED(2000);
+  
+  init_motor();
+  test_motors();
 
-void stop_right_motor() {
-  digitalWrite(RIGHT_FORWARD, LOW);
-  digitalWrite(RIGHT_BACK, LOW);
-  analogWrite(RIGHT_SPEED, 0);
-}
+  init_hc_sr04s();
+  hc_sr04_distance(0);
+  // Serial.print("")
+  // Serial.println();
 
-void stop_motor() {
-  stop_left_motor();
-  stop_right_motor();
+  Serial.println("finish setup");
+  Serial.flush();
 }
-
-const int DEFAULT_SPEED = 255;
-void left_motor_forward(int speed = DEFAULT_SPEED) {
-  analogWrite(LEFT_SPEED, speed);
-  digitalWrite(LEFT_FORWARD, HIGH);
-  digitalWrite(LEFT_BACK, LOW);
-}
-
-void left_motor_back(int speed = DEFAULT_SPEED) {
-  analogWrite(LEFT_SPEED, speed);
-  digitalWrite(LEFT_FORWARD, LOW);
-  digitalWrite(LEFT_BACK, HIGH);
-}
-
-void right_motor_forward(int speed = DEFAULT_SPEED) {
-  analogWrite(RIGHT_SPEED, speed);
-  digitalWrite(RIGHT_FORWARD, HIGH);
-  digitalWrite(RIGHT_BACK, LOW);
-}
-
-void right_motor_back(int speed = DEFAULT_SPEED) {
-  analogWrite(RIGHT_SPEED, speed);
-  digitalWrite(RIGHT_FORWARD, LOW);
-  digitalWrite(RIGHT_BACK, HIGH);
-}*/
 
 void loop() {
-  /*
-  stop_motor();
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(6000);
-  digitalWrite(LED_BUILTIN, HIGH);
-  left_motor_forward(200);
-  delay(6000);
-*/
+
+  // Serial.println("fuck");
+  // Serial.flush();
 }
