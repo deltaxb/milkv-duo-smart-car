@@ -9,14 +9,22 @@
 #endif
 
 const MotorPins motors[] = {
-    {19, 20,  4},  // LEFT_FRONT
-    {21, 22,  5},  // LEFT_BACK
-    {24, 25, 16},  // RIGHT_FRONT
-    {26, 27, 17}   // RIGHT_BACK
+  {24, 25, 4},
+  {26, 27, 5}
+  /*
+  {19, 20,  4},  // LEFT_FRONT
+  {21, 22,  5},  // LEFT_BACK
+  {24, 25, 16},  // RIGHT_FRONT
+  {26, 27, 17}   // RIGHT_BACK
+ */
 };
 
 // 电机组配置（每组对应的电机索引）
-const uint8_t motorGroups[7][5] = { // 第二维度改为5
+const uint8_t motorGroups[][3] = { // 第二维度改为5
+  {0, 0xFF}, //LEFT_ALL
+  {1, 0xFF}, //RIGHT_ALL
+  {0, 1, 0xFF} //ALL_MOTORS
+  /*
     {0, 0xFF},         // LEFT_FRONT (1个电机)
     {1, 0xFF},         // LEFT_BACK
     {2, 0xFF},         // RIGHT_FRONT
@@ -24,6 +32,7 @@ const uint8_t motorGroups[7][5] = { // 第二维度改为5
     {0, 1, 0xFF},      // LEFT_ALL (2个电机)
     {2, 3, 0xFF},      // RIGHT_ALL
     {0, 1, 2, 3, 0xFF} // ALL_MOTORS (4个电机)
+  */
 };
 
 constexpr MotorGroup motor_groups[] = {

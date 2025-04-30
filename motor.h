@@ -1,6 +1,11 @@
 #ifndef MOTOR_H
 #define MOTOR_H
 
+#define MOTOR_GROUP_ENTRIES \
+  MOTOR_ENTRY(LEFT_ALL, 0) \
+  MOTOR_ENTRY(RIGHT_ALL, 1) \
+  MOTOR_ENTRY(ALL_MOTORS, 2)
+/*
 #define MOTOR_GROUP_ENTRIES  \
   MOTOR_ENTRY(LEFT_FRONT, 0) \
   MOTOR_ENTRY(LEFT_BACK, 1) \
@@ -9,7 +14,7 @@
   MOTOR_ENTRY(LEFT_ALL, 4) \
   MOTOR_ENTRY(RIGHT_ALL, 5) \
   MOTOR_ENTRY(ALL_MOTORS, 6)
-
+*/
 struct MotorPins {
     uint8_t forward;
     uint8_t backward;

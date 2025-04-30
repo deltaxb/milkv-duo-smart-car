@@ -4,8 +4,8 @@
 #define HC_SR04_DEBUG
 
 //#define MAX_NUM 10
-const int trig_pins[] = {14};
-const int echo_pins[] = {15};
+const int trig_pins[] = {19};
+const int echo_pins[] = {20};
 
 void init_hc_sr04s() {
   for (auto &trig_pin : trig_pins) {
@@ -25,13 +25,14 @@ float hc_sr04_distance(int id) {
   delayMicroseconds(10);
   digitalWrite(trig_pin, LOW);
 
+  Serial.println("start calculate");
   float duration = pulseIn(echo_pin, HIGH);
-
+  Serial.println("end calculate");
   float distance = (duration * .0343)/2;
   #ifdef HC_SR04_DEBUG
   Serial.print("Distance: ");
   Serial.println(distance);
   #endif
-  delay(100);
-  return id;
+  //delay(100);
+  return distance;
 }
