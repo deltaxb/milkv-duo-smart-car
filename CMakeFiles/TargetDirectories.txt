@@ -1,0 +1,3 @@
+/mnt/e/学校课程/程序设计/大作业2/main/CMakeFiles/car.dir
+/mnt/e/学校课程/程序设计/大作业2/main/CMakeFiles/edit_cache.dir
+/mnt/e/学校课程/程序设计/大作业2/main/CMakeFiles/rebuild_cache.dir

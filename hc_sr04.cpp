@@ -1,5 +1,8 @@
 #include "hc_sr04.h"
-#include <Arduino.h>
+#include <wiringx.h>
+#include <cstdio>
+#include <chrono>
+#include <unistd.h>
 
 #define HC_SR04_DEBUG
 
@@ -9,10 +12,10 @@ const int echo_pins[] = {20};
 
 void init_hc_sr04s() {
   for (auto &trig_pin : trig_pins) {
-    pinMode(trig_pin, OUTPUT);
+    pinMode(trig_pin, PINMODE_OUTPUT);
   }
   for (auto &echo_pin : echo_pins) {
-    pinMode(echo_pin, INPUT);
+    pinMode(echo_pin, PINMODE_INPUT);
   }
 }
 
@@ -24,14 +27,20 @@ float hc_sr04_distance(int id) {
   digitalWrite(trig_pin, HIGH);
   delayMicroseconds(10);
   digitalWrite(trig_pin, LOW);
+  while (digitalRead(echo_pin) == LOW) {
+    usleep(1);
+  }
 
-  Serial.println("start calculate");
-  float duration = pulseIn(echo_pin, HIGH);
-  Serial.println("end calculate");
+  auto start_time = std::chrono::high_resolution_clock::now();
+  while (digitalRead(echo_pin) == HIGH) {
+    usleep(1);
+  }
+
+  auto end_time = std::chrono::high_resolution_clock::now();
+  float duration = (end_time - start_time).count();
   float distance = (duration * .0343)/2;
   #ifdef HC_SR04_DEBUG
-  Serial.print("Distance: ");
-  Serial.println(distance);
+  printf("Distance: %.4f\n", distance);
   #endif
   //delay(100);
   return distance;

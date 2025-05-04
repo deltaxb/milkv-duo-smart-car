@@ -33,7 +33,7 @@ void receive(int a) {
   }
 }
 
-byte val = 0;
+byte val = 0;       
 
 void setup() {
   Serial.begin(115200);
@@ -49,7 +49,10 @@ void setup() {
   light_LED(2000);
   
   init_motor();
-  //test_motors();
+  forward_motors(MotorGroup::ALL_MOTORS, 30);
+  delay(2000);
+  stop_motors(MotorGroup::ALL_MOTORS);
+  //test_motors(200);
   //scanI2C();
   init_hc_sr04s();
   init_track_sensors();
@@ -86,14 +89,16 @@ namespace FOLLOW {
   }
 }
 
+
 void loop() {
-  Serial.println("start loop");
+  Serial.println("start loop"); 
   //light_LED(2000);
   //extinguish_LED(2000);
   //Serial.println("end light change");
   float dis = hc_sr04_distance(0);
-  Serial.println("end distance compute");
-  Serial.println(dis);
+  float track_sensor_state = get_track_sensor_state(0);
+  //Serial.println("end distance compute");
+  //Serial.println(dis);
   delay(500);
 /*
   Wire.beginTransmission(0x50);         // Transmit to device number 0x50

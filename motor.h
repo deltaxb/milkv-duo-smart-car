@@ -16,9 +16,9 @@
   MOTOR_ENTRY(ALL_MOTORS, 6)
 */
 struct MotorPins {
-    uint8_t forward;
-    uint8_t backward;
-    uint8_t speed;
+    int forward;
+    int backward;
+    int speed;
 };
 
 // 电机组枚举
@@ -28,12 +28,15 @@ enum class MotorGroup : int {
   #undef MOTOR_ENTRY 
 };
 
+const int PWM_DUTY_MAX = 8e5;
+const int MAX_SPPED = PWM_DUTY_MAX;
+
 void init_motor();
 //void set_motor(const MotorPins &motor, bool forward, bool backward, int speed);
-void control_motors(MotorGroup group, bool forward, bool backward, int speed);
+void control_motors(MotorGroup group, bool forward, bool backward, int speed = MAX_SPPED);
 void stop_motors(MotorGroup group = MotorGroup::ALL_MOTORS);
-void forward_motors(MotorGroup group = MotorGroup::ALL_MOTORS, int speed = 255);
-void backward_motors(MotorGroup group = MotorGroup::ALL_MOTORS, int speed = 255);
-void test_motors();
-void set_motor(const MotorPins &motor, bool forward, bool backward, int speed);
+void forward_motors(MotorGroup group = MotorGroup::ALL_MOTORS, int speed = MAX_SPPED);
+void backward_motors(MotorGroup group = MotorGroup::ALL_MOTORS, int speed = MAX_SPPED);
+void test_motors(int speed = MAX_SPPED);
+void set_motor(const MotorPins &motor, bool forward, bool backward, int speed = MAX_SPPED);
 #endif

@@ -1,16 +1,13 @@
-#include <Arduino.h>
 #include <cstdint>
+#include <cstdio>
 #include "motor.h"
+#include <wiringx.h>
 
-#ifdef _WIN32
-#define ENDL \r\n
-#else
-#define ENDL \n
-#endif
+const int PWM_PERIOD = 1e6;
 
 const MotorPins motors[] = {
-  {24, 25, 4},
-  {26, 27, 5}
+  {26, 27, 5},
+  {24, 25, 4}
   /*
   {19, 20,  4},  // LEFT_FRONT
   {21, 22,  5},  // LEFT_BACK
@@ -42,20 +39,35 @@ constexpr MotorGroup motor_groups[] = {
 };
 
 void init_motor() {
+  
   for (auto& motor : motors) {
-    pinMode(motor.forward, OUTPUT);
-    pinMode(motor.backward, OUTPUT);
-    pinMode(motor.speed, OUTPUT);
+
+    pinMode(motor.forward, PINMODE_OUTPUT);
+    pinMode(motor.backward, PINMODE_OUTPUT);
+    pinMode(motor.speed, PINMODE_OUTPUT);
+    printf("set PWM period\n");
+    if (wiringXPWMSetPeriod(motor.speed, PWM_PERIOD)) {
+      printf("fail to set PWM Period\n");
+    }
+    printf("set PWM polarity\n");
+    wiringXPWMSetPolarity(motor.speed, 0);
+    printf("set PWM duty\n");
+    wiringXPWMSetDuty(motor.speed, PWM_DUTY_MAX);
+    printf("enable PWM\n");
+    wiringXPWMEnable(motor.speed, 1);
     set_motor(motor, LOW, LOW, 0);
+    printf("motor.forward: %d\n", motor.forward);
+    printf("motor.backward: %d\n", motor.backward);
+    printf("motor.speed: %d\n", motor.speed);
   }
   //stop_motors();
 }
 
 // 基础电机控制
 void set_motor(const MotorPins &motor, bool forward, bool backward, int speed) {
-  digitalWrite(motor.forward, forward);
-  digitalWrite(motor.backward, backward);
-  analogWrite(motor.speed, speed);
+  digitalWrite(motor.forward, forward? HIGH : LOW);
+  digitalWrite(motor.backward, backward? HIGH : LOW);
+  wiringXPWMSetDuty(motor.speed, speed);
 }
 
 // 通用组控制
@@ -81,21 +93,15 @@ void backward_motors(MotorGroup group, int speed) {
 
 
 //ensure initialize already
-void test_motors() {
+void test_motors(int speed) {
   for (MotorGroup group : motor_groups) {
-    Serial.printf("start test motor %d\r\n", static_cast<int>(group));
-    /*
-    const int label_time = (static_cast<int>(group) + 1) * 1000;
-    digitalWrite(LED_BUILTIN, HIGH);
-    delay(label_time);
-    digitalWrite(LED_BUILTIN, LOW);
-    */
-    forward_motors(group);
-    delay(2000);
-    backward_motors(group);
-    delay(2000);
+    printf("start test motor %d\n", static_cast<int>(group));
+    forward_motors(group, speed);
+    delayMicroseconds(2000);
+    backward_motors(group, speed);
+    delayMicroseconds(2000);
     stop_motors(group);
-    delay(1000);
-    Serial.printf("end test motor %d\r\n", static_cast<int>(group));
+    delayMicroseconds(2000);
+    printf("end test motor %d\n", static_cast<int>(group));
   }
 }

@@ -1,28 +1,29 @@
-#include <Arduino.h>
 #include "track_sensor.h"
+#include <wiringx.h>
+#include <cstdio>
 
 #define TRACK_SENSOR_DEBUG
 
-const int NUM = 2;
+const int NUM = 8;
 const int sensor_pins[][NUM] = {
-  {21, 22}
+  {21, 22, 15, 14, 17, 29, 31, 32}
 };
 
 void init_track_sensors() {
   for (auto &id : sensor_pins)
     for (auto &pins : id)
-      pinMode(pins, INPUT);
-}
+      pinMode(pins, PINMODE_INPUT);
+} 
 
 int get_track_sensor_state(int id) {
   int state = 0;
-  Serial.println("start get state");
   for (int j = 0; j < NUM; ++j) {
-    state = state << 1 | digitalRead(sensor_pins[id][j]);
+    int info = digitalRead(sensor_pins[id][j]);
+    state = state << 1 | info;
+    //Serial.println(state);
   }
-  Serial.println("end get state");
   #ifdef TRACK_SENSOR_DEBUG
-  Serial.printf("track sensor %d state: %d\r\n", state);
+  printf("track sensor %d state: %d\n", id, state);
   #endif
   return state;
 }

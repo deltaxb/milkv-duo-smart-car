@@ -1,0 +1,1 @@
+/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ CMakeFiles/car.dir/hc_sr04.cpp.o CMakeFiles/car.dir/main.cpp.o CMakeFiles/car.dir/motor.cpp.o CMakeFiles/car.dir/track_sensor.cpp.o -o car   -L/mnt/e/学校课程/程序设计/大作业2/main/libs  -Wl,-rpath,/mnt/e/学校课程/程序设计/大作业2/main/libs -lwiringx 
