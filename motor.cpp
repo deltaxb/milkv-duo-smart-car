@@ -1,11 +1,12 @@
 #include <cstdint>
 #include <cstdio>
+#include <algorithm>
 #include "motor.h"
 #include <wiringx.h>
 //#include <ctime>
 #include <unistd.h> 
 
-constexpr int VERBOSE = 1;
+constexpr int VERBOSE = 0;
 constexpr int PWM_PERIOD = 1e6;
 
 const MotorPins motors[] = {
@@ -130,4 +131,15 @@ void test_motors(int speed) {
 void reset() {
   for (auto motor : motors)
     wiringXPWMEnable(motor.speed, 0);
+}
+
+void move_front_and_back(MotorGroup group, int speed) {
+  speed = std::min(speed, MAX_SPEED);
+  speed = std::max(speed, -MAX_SPEED);
+  if (speed >= 0) {
+    control_motors(group, HIGH, LOW, speed);
+  }
+  else {
+    control_motors(group, LOW, HIGH, -speed);
+  }
 }

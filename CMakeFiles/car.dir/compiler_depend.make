@@ -36,6 +36,7 @@ CMakeFiles/car.dir/main.cpp.o: main.cpp \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/lib/gcc/riscv64-unknown-linux-musl/10.2.0/include/stdint.h \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/backward/binders.h \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/alloc_traits.h \
+  /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/allocated_ptr.h \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/allocator.h \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/basic_string.h \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/basic_string.tcc \
@@ -53,6 +54,7 @@ CMakeFiles/car.dir/main.cpp.o: main.cpp \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/hash_bytes.h \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/int_limits.h \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/iterator_concepts.h \
+  /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/list.tcc \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/localefwd.h \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/memoryfwd.h \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/move.h \
@@ -70,6 +72,7 @@ CMakeFiles/car.dir/main.cpp.o: main.cpp \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_iterator.h \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_iterator_base_funcs.h \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_iterator_base_types.h \
+  /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_list.h \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_pair.h \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/string_view.tcc \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stringfwd.h \
@@ -84,6 +87,7 @@ CMakeFiles/car.dir/main.cpp.o: main.cpp \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/debug/assertions.h \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/debug/debug.h \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/exception \
+  /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ext/aligned_buffer.h \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ext/alloc_traits.h \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ext/atomicity.h \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ext/new_allocator.h \
@@ -92,6 +96,7 @@ CMakeFiles/car.dir/main.cpp.o: main.cpp \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ext/type_traits.h \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/initializer_list \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/iosfwd \
+  /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/list \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/new \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/pstl/pstl_config.h \
   /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/riscv64-unknown-linux-musl/lib64v0p7_xthead/lp64d/bits/atomic_word.h \
@@ -278,11 +283,15 @@ CMakeFiles/car.dir/track_sensor.cpp.o: track_sensor.cpp \
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/streambuf:
 
-/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/range_cmp.h:
+/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/stdexcept:
+
+/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ostream:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/localefwd.h:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/iterator_concepts.h:
+
+/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/allocated_ptr.h:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/exception_defines.h:
 
@@ -293,6 +302,8 @@ CMakeFiles/car.dir/track_sensor.cpp.o: track_sensor.cpp \
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/exception_ptr.h:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/cpp_type_traits.h:
+
+/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ext/aligned_buffer.h:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/charconv.h:
 
@@ -328,8 +339,6 @@ track_sensor.h:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/lib/gcc/riscv64-unknown-linux-musl/10.2.0/include/stddef.h:
 
-/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/basic_string.tcc:
-
 motor.cpp:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/bits/stdint.h:
@@ -350,12 +359,6 @@ motor.cpp:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ext/alloc_traits.h:
 
-/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/move.h:
-
-/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/lib/gcc/riscv64-unknown-linux-musl/10.2.0/include/stdint.h:
-
-/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/range_access.h:
-
 hc_sr04.cpp:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/riscv64-unknown-linux-musl/lib64v0p7_xthead/lp64d/bits/c++config.h:
@@ -365,6 +368,8 @@ hc_sr04.cpp:
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/cxxabi_forced.h:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/stdc-predef.h:
+
+/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/list.tcc:
 
 track_sensor.cpp:
 
@@ -416,13 +421,19 @@ hc_sr04.h:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/ostream_insert.h:
 
+/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/move.h:
+
+/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/lib/gcc/riscv64-unknown-linux-musl/10.2.0/include/stdint.h:
+
+/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/range_access.h:
+
+/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/range_cmp.h:
+
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/stdio.h:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_algobase.h:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/pthread.h:
-
-/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/stdexcept:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/stdint.h:
 
@@ -437,6 +448,8 @@ hc_sr04.h:
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_iterator.h:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_iterator_base_types.h:
+
+/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_list.h:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_pair.h:
 
@@ -462,6 +475,10 @@ hc_sr04.h:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/cstdlib:
 
+/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/riscv64-unknown-linux-musl/lib64v0p7_xthead/lp64d/bits/ctype_inline.h:
+
+/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/new:
+
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/cwchar:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/debug/assertions.h:
@@ -479,6 +496,10 @@ hc_sr04.h:
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/functional_hash.h:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/initializer_list:
+
+/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/basic_string.tcc:
+
+/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/list:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/riscv64-unknown-linux-musl/lib64v0p7_xthead/lp64d/bits/atomic_word.h:
 
@@ -508,8 +529,6 @@ motor.h:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/basic_ios.tcc:
 
-/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ostream:
-
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/ios_base.h:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/istream.tcc:
@@ -527,7 +546,3 @@ motor.h:
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/streambuf_iterator.h:
 
 /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/istream:
-
-/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/new:
-
-/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/riscv64-unknown-linux-musl/lib64v0p7_xthead/lp64d/bits/ctype_inline.h:

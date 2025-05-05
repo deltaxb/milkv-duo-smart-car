@@ -96,4 +96,9 @@ CMakeFiles/car.dir/main.cpp.o: \
  /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ext/string_conversions.h \
  /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/cerrno \
  /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/charconv.h \
- /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/basic_string.tcc
+ /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/basic_string.tcc \
+ /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/list \
+ /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/stl_list.h \
+ /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/allocated_ptr.h \
+ /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/ext/aligned_buffer.h \
+ /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/riscv64-unknown-linux-musl/include/c++/10.2.0/bits/list.tcc

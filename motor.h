@@ -40,4 +40,6 @@ void backward_motors(MotorGroup group = MotorGroup::ALL_MOTORS, int speed = MAX_
 void test_motors(int speed = MAX_SPEED);
 void set_motor(const MotorPins &motor, bool forward, bool backward, int speed = MAX_SPEED);
 void reset();
+void move_front_and_back(MotorGroup group, int speed = MAX_SPEED);
+
 #endif
