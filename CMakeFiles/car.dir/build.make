@@ -73,57 +73,57 @@ CMakeFiles/car.dir/hc_sr04.cpp.o: CMakeFiles/car.dir/flags.make
 CMakeFiles/car.dir/hc_sr04.cpp.o: hc_sr04.cpp
 CMakeFiles/car.dir/hc_sr04.cpp.o: CMakeFiles/car.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/e/学校课程/程序设计/大作业2/main/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/car.dir/hc_sr04.cpp.o"
-	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car.dir/hc_sr04.cpp.o -MF CMakeFiles/car.dir/hc_sr04.cpp.o.d -o CMakeFiles/car.dir/hc_sr04.cpp.o -c /mnt/e/学校课程/程序设计/大作业2/main/hc_sr04.cpp
+	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ --sysroot=/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/../sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car.dir/hc_sr04.cpp.o -MF CMakeFiles/car.dir/hc_sr04.cpp.o.d -o CMakeFiles/car.dir/hc_sr04.cpp.o -c /mnt/e/学校课程/程序设计/大作业2/main/hc_sr04.cpp
 
 CMakeFiles/car.dir/hc_sr04.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/car.dir/hc_sr04.cpp.i"
-	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/学校课程/程序设计/大作业2/main/hc_sr04.cpp > CMakeFiles/car.dir/hc_sr04.cpp.i
+	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ --sysroot=/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/../sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/学校课程/程序设计/大作业2/main/hc_sr04.cpp > CMakeFiles/car.dir/hc_sr04.cpp.i
 
 CMakeFiles/car.dir/hc_sr04.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/car.dir/hc_sr04.cpp.s"
-	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/学校课程/程序设计/大作业2/main/hc_sr04.cpp -o CMakeFiles/car.dir/hc_sr04.cpp.s
+	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ --sysroot=/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/../sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/学校课程/程序设计/大作业2/main/hc_sr04.cpp -o CMakeFiles/car.dir/hc_sr04.cpp.s
 
 CMakeFiles/car.dir/main.cpp.o: CMakeFiles/car.dir/flags.make
 CMakeFiles/car.dir/main.cpp.o: main.cpp
 CMakeFiles/car.dir/main.cpp.o: CMakeFiles/car.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/e/学校课程/程序设计/大作业2/main/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/car.dir/main.cpp.o"
-	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car.dir/main.cpp.o -MF CMakeFiles/car.dir/main.cpp.o.d -o CMakeFiles/car.dir/main.cpp.o -c /mnt/e/学校课程/程序设计/大作业2/main/main.cpp
+	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ --sysroot=/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/../sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car.dir/main.cpp.o -MF CMakeFiles/car.dir/main.cpp.o.d -o CMakeFiles/car.dir/main.cpp.o -c /mnt/e/学校课程/程序设计/大作业2/main/main.cpp
 
 CMakeFiles/car.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/car.dir/main.cpp.i"
-	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/学校课程/程序设计/大作业2/main/main.cpp > CMakeFiles/car.dir/main.cpp.i
+	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ --sysroot=/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/../sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/学校课程/程序设计/大作业2/main/main.cpp > CMakeFiles/car.dir/main.cpp.i
 
 CMakeFiles/car.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/car.dir/main.cpp.s"
-	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/学校课程/程序设计/大作业2/main/main.cpp -o CMakeFiles/car.dir/main.cpp.s
+	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ --sysroot=/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/../sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/学校课程/程序设计/大作业2/main/main.cpp -o CMakeFiles/car.dir/main.cpp.s
 
 CMakeFiles/car.dir/motor.cpp.o: CMakeFiles/car.dir/flags.make
 CMakeFiles/car.dir/motor.cpp.o: motor.cpp
 CMakeFiles/car.dir/motor.cpp.o: CMakeFiles/car.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/e/学校课程/程序设计/大作业2/main/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/car.dir/motor.cpp.o"
-	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car.dir/motor.cpp.o -MF CMakeFiles/car.dir/motor.cpp.o.d -o CMakeFiles/car.dir/motor.cpp.o -c /mnt/e/学校课程/程序设计/大作业2/main/motor.cpp
+	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ --sysroot=/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/../sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car.dir/motor.cpp.o -MF CMakeFiles/car.dir/motor.cpp.o.d -o CMakeFiles/car.dir/motor.cpp.o -c /mnt/e/学校课程/程序设计/大作业2/main/motor.cpp
 
 CMakeFiles/car.dir/motor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/car.dir/motor.cpp.i"
-	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/学校课程/程序设计/大作业2/main/motor.cpp > CMakeFiles/car.dir/motor.cpp.i
+	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ --sysroot=/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/../sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/学校课程/程序设计/大作业2/main/motor.cpp > CMakeFiles/car.dir/motor.cpp.i
 
 CMakeFiles/car.dir/motor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/car.dir/motor.cpp.s"
-	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/学校课程/程序设计/大作业2/main/motor.cpp -o CMakeFiles/car.dir/motor.cpp.s
+	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ --sysroot=/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/../sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/学校课程/程序设计/大作业2/main/motor.cpp -o CMakeFiles/car.dir/motor.cpp.s
 
 CMakeFiles/car.dir/track_sensor.cpp.o: CMakeFiles/car.dir/flags.make
 CMakeFiles/car.dir/track_sensor.cpp.o: track_sensor.cpp
 CMakeFiles/car.dir/track_sensor.cpp.o: CMakeFiles/car.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/e/学校课程/程序设计/大作业2/main/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/car.dir/track_sensor.cpp.o"
-	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car.dir/track_sensor.cpp.o -MF CMakeFiles/car.dir/track_sensor.cpp.o.d -o CMakeFiles/car.dir/track_sensor.cpp.o -c /mnt/e/学校课程/程序设计/大作业2/main/track_sensor.cpp
+	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ --sysroot=/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/../sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/car.dir/track_sensor.cpp.o -MF CMakeFiles/car.dir/track_sensor.cpp.o.d -o CMakeFiles/car.dir/track_sensor.cpp.o -c /mnt/e/学校课程/程序设计/大作业2/main/track_sensor.cpp
 
 CMakeFiles/car.dir/track_sensor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/car.dir/track_sensor.cpp.i"
-	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/学校课程/程序设计/大作业2/main/track_sensor.cpp > CMakeFiles/car.dir/track_sensor.cpp.i
+	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ --sysroot=/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/../sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/学校课程/程序设计/大作业2/main/track_sensor.cpp > CMakeFiles/car.dir/track_sensor.cpp.i
 
 CMakeFiles/car.dir/track_sensor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/car.dir/track_sensor.cpp.s"
-	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/学校课程/程序设计/大作业2/main/track_sensor.cpp -o CMakeFiles/car.dir/track_sensor.cpp.s
+	/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/riscv64-unknown-linux-musl-g++ --sysroot=/mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/bin/../sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/学校课程/程序设计/大作业2/main/track_sensor.cpp -o CMakeFiles/car.dir/track_sensor.cpp.s
 
 # Object files for target car
 car_OBJECTS = \

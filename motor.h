@@ -28,15 +28,16 @@ enum class MotorGroup : int {
   #undef MOTOR_ENTRY 
 };
 
-const int PWM_DUTY_MAX = 8e5;
-const int MAX_SPPED = PWM_DUTY_MAX;
+constexpr int PWM_DUTY_MAX = 8e5;
+constexpr int MAX_SPEED = PWM_DUTY_MAX;
 
 void init_motor();
 //void set_motor(const MotorPins &motor, bool forward, bool backward, int speed);
-void control_motors(MotorGroup group, bool forward, bool backward, int speed = MAX_SPPED);
+void control_motors(MotorGroup group, bool forward, bool backward, int speed = MAX_SPEED);
 void stop_motors(MotorGroup group = MotorGroup::ALL_MOTORS);
-void forward_motors(MotorGroup group = MotorGroup::ALL_MOTORS, int speed = MAX_SPPED);
-void backward_motors(MotorGroup group = MotorGroup::ALL_MOTORS, int speed = MAX_SPPED);
-void test_motors(int speed = MAX_SPPED);
-void set_motor(const MotorPins &motor, bool forward, bool backward, int speed = MAX_SPPED);
+void forward_motors(MotorGroup group = MotorGroup::ALL_MOTORS, int speed = MAX_SPEED);
+void backward_motors(MotorGroup group = MotorGroup::ALL_MOTORS, int speed = MAX_SPEED);
+void test_motors(int speed = MAX_SPEED);
+void set_motor(const MotorPins &motor, bool forward, bool backward, int speed = MAX_SPEED);
+void reset();
 #endif

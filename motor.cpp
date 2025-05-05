@@ -2,12 +2,15 @@
 #include <cstdio>
 #include "motor.h"
 #include <wiringx.h>
+//#include <ctime>
+#include <unistd.h> 
 
-const int PWM_PERIOD = 1e6;
+constexpr int VERBOSE = 1;
+constexpr int PWM_PERIOD = 1e6;
 
 const MotorPins motors[] = {
-  {26, 27, 5},
-  {24, 25, 4}
+  {18, 19, 2},
+  {20, 21, 3}
   /*
   {19, 20,  4},  // LEFT_FRONT
   {21, 22,  5},  // LEFT_BACK
@@ -41,10 +44,21 @@ constexpr MotorGroup motor_groups[] = {
 void init_motor() {
   
   for (auto& motor : motors) {
-
-    pinMode(motor.forward, PINMODE_OUTPUT);
-    pinMode(motor.backward, PINMODE_OUTPUT);
-    pinMode(motor.speed, PINMODE_OUTPUT);
+    int result = 0;
+    
+    result = pinMode(motor.forward, PINMODE_OUTPUT);
+    if (result) {
+      printf("pinMode %d\n error", motor.forward);
+    }
+    result = pinMode(motor.backward, PINMODE_OUTPUT);
+    if (result) {
+      printf("pinMode %d\n error", motor.backward);
+    }
+    /*
+    result = pinMode(motor.speed, PINMODE_OUTPUT);
+    if (result) {
+      printf("pinMode %d\n error", motor.speed);
+    }*/
     printf("set PWM period\n");
     if (wiringXPWMSetPeriod(motor.speed, PWM_PERIOD)) {
       printf("fail to set PWM Period\n");
@@ -53,9 +67,10 @@ void init_motor() {
     wiringXPWMSetPolarity(motor.speed, 0);
     printf("set PWM duty\n");
     wiringXPWMSetDuty(motor.speed, PWM_DUTY_MAX);
+    printf("set init motor");
+    set_motor(motor, LOW, LOW, 0);
     printf("enable PWM\n");
     wiringXPWMEnable(motor.speed, 1);
-    set_motor(motor, LOW, LOW, 0);
     printf("motor.forward: %d\n", motor.forward);
     printf("motor.backward: %d\n", motor.backward);
     printf("motor.speed: %d\n", motor.speed);
@@ -65,6 +80,12 @@ void init_motor() {
 
 // 基础电机控制
 void set_motor(const MotorPins &motor, bool forward, bool backward, int speed) {
+  if (VERBOSE) {
+    printf("set motors: \n");
+    printf("motor.forward: %d\n", motor.forward);
+    printf("motor.backward: %d\n", motor.backward);
+    printf("motor.speed: %d\n", motor.speed);
+  }
   digitalWrite(motor.forward, forward? HIGH : LOW);
   digitalWrite(motor.backward, backward? HIGH : LOW);
   wiringXPWMSetDuty(motor.speed, speed);
@@ -97,11 +118,16 @@ void test_motors(int speed) {
   for (MotorGroup group : motor_groups) {
     printf("start test motor %d\n", static_cast<int>(group));
     forward_motors(group, speed);
-    delayMicroseconds(2000);
+    sleep(2);
     backward_motors(group, speed);
-    delayMicroseconds(2000);
+    sleep(2);
     stop_motors(group);
-    delayMicroseconds(2000);
+    sleep(2);
     printf("end test motor %d\n", static_cast<int>(group));
   }
+}
+
+void reset() {
+  for (auto motor : motors)
+    wiringXPWMEnable(motor.speed, 0);
 }

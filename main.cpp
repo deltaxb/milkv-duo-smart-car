@@ -4,8 +4,32 @@
 #include <wiringx.h>
 #include <unistd.h>
 #include <cstdio>
+#include <cstdlib>
+#include <string>
+void stop_program() {
+  wiringXGC();
+  exit(0);
+}
+
+void msleep(unsigned int ms) {
+  usleep(ms * 1000);
+}
+
+void adjest_GPIO() {
+  system("duo-pinmux -w GP2/PWM_10");
+  system("duo-pinmux -w GP3/PWM_11");
+  for (int i = 6; i <= 13; ++i) {
+    std::string str = "duo-pinmux -w GP" + std::to_string(i);
+    str += "/GP" + std::to_string(i);
+    const char *command = str.c_str();
+    printf("%s\n", command);
+    system(command);
+  }
+}
+
 void setup() {
-  if(wiringXSetup("milkv_duo", NULL) == -1) {
+  adjest_GPIO();
+  if(wiringXSetup("milkv_duo", nullptr) == -1) {
     printf("wiringX初始化失败\n");
     wiringXGC();
     return;
@@ -13,41 +37,98 @@ void setup() {
   printf("start init motors\n");
   init_motor();
   printf("end init motirs\n");
-  forward_motors(MotorGroup::ALL_MOTORS, 30);
+  test_motors(MAX_SPEED / 1.5);
+  //forward_motors(MotorGroup::ALL_MOTORS, MAX_SPEED / 2);
   printf("end forward\n");
-  delayMicroseconds(1000);
   stop_motors(MotorGroup::ALL_MOTORS);
-  delayMicroseconds(1000);
   init_hc_sr04s();
   init_track_sensors();
-  usleep(2e6);
+}
+
+const int MAX_LEVEL = 5;
+void turn_left(int level) {
+  forward_motors(MotorGroup::RIGHT_ALL, MAX_SPEED);
+  forward_motors(MotorGroup::LEFT_ALL, MAX_SPEED / level);
+}
+
+void turn_right(int level) {
+  forward_motors(MotorGroup::LEFT_ALL, MAX_SPEED);
+  forward_motors(MotorGroup::RIGHT_ALL, MAX_SPEED / level);
 }
 
 namespace FOLLOW {
+  //1 black
+  //0 white
   int front_track_senor = 0;
-  void loop_follow() {
+  void turn(float degree) {
+    const int BASE_SPEED = MAX_SPEED / 2;
+    const float K = degree * BASE_SPEED;
+    forward_motors(MotorGroup::LEFT_ALL, BASE_SPEED - K);
+    forward_motors(MotorGroup::LEFT_ALL, BASE_SPEED + K);
+  }
+
+  int calc_err(int state) {
+    const int r = TRACK_SENSOR_PINS / 2;
+    const int l = TRACK_SENSOR_PINS & 1? r : r - 1;
+    int res = 0;
+    for (int i = 0; i <= l; ++i) {
+      res -= (state >> i & 1) * (i + 1);
+    }
+    for (int i = r; i < TRACK_SENSOR_PINS; ++i) {
+      res += (state >> i & 1) * (TRACK_SENSOR_PINS - i);
+    }
+    return res;
+  }
+  float last_error = 0;
+  const float K_p = 0.3;
+  const float K_d = 0.1;
+  int loop_follow() {
     int cur_state = get_track_sensor_state(front_track_senor);
+    if (cur_state == 0) {
+      stop_motors(MotorGroup::ALL_MOTORS);
+      return -1;
+    }
+    float error = calc_err(cur_state);
+    float delta = error - last_error;
+    float degree = error * K_p + delta * K_d;
+    turn(degree);
+    return 0;
   }
 
   void follow_black_line() {
     int init_state = get_track_sensor_state(front_track_senor);
     if (init_state == 0) {
+      printf("no black line!\n");
       return;
+    }
+    while (1) {
+      int result = loop_follow();
+      if (result == -1) {
+        printf("out of black line!\n");
+        return;
+      }
+      msleep(500);
     }
   }
 }
 
 
+
 void loop() {
   float dis = hc_sr04_distance(0);
   float track_sensor_state = get_track_sensor_state(0);
-  delayMicroseconds(500);
+  msleep(500);
 }
 
 int main() {
   setup();
+  /*
   while (1) {
     loop();
+  }*/
+  while (1) {
+    FOLLOW::follow_black_line();
+    sleep(2);
   }
   return 0;
 }

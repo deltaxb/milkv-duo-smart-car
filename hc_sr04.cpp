@@ -7,8 +7,8 @@
 #define HC_SR04_DEBUG
 
 //#define MAX_NUM 10
-const int trig_pins[] = {19};
-const int echo_pins[] = {20};
+const int trig_pins[] = {15};
+const int echo_pins[] = {14};
 
 void init_hc_sr04s() {
   for (auto &trig_pin : trig_pins) {
@@ -37,7 +37,9 @@ float hc_sr04_distance(int id) {
   }
 
   auto end_time = std::chrono::high_resolution_clock::now();
-  float duration = (end_time - start_time).count();
+  //float test_duration = (end_time - start_time).count();
+  float duration = std::chrono::duration_cast<std::chrono::microseconds>(end_time - start_time).count();
+  //printf("%.4f %.4f\n", test_duration, duration);
   float distance = (duration * .0343)/2;
   #ifdef HC_SR04_DEBUG
   printf("Distance: %.4f\n", distance);

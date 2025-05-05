@@ -2,7 +2,7 @@ CMakeFiles/car.dir/hc_sr04.cpp.o: \
  /mnt/e/学校课程/程序设计/大作业2/main/hc_sr04.cpp \
  /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/stdc-predef.h \
  /mnt/e/学校课程/程序设计/大作业2/main/hc_sr04.h \
- /mnt/e/学校课程/程序设计/大作业2/main/include/wiringx.h \
+ /mnt/e/学校课程/程序设计/大作业2/duo-examples/include/system/wiringx.h \
  /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/errno.h \
  /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/features.h \
  /mnt/e/学校课程/程序设计/大作业2/duo-examples/host-tools/gcc/riscv64-linux-musl-x86_64/sysroot/usr/include/bits/errno.h \
