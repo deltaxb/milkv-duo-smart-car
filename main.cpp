@@ -63,7 +63,7 @@ namespace FOLLOW {
   //0 white
   int front_track_senor = 0;
   void turn(float degree) {
-    const int BASE_SPEED = MAX_SPEED / 2;
+    const int BASE_SPEED = MAX_SPEED / 2.5;
     const float K = degree * BASE_SPEED;
     move_front_and_back(MotorGroup::LEFT_ALL, BASE_SPEED - K);
     move_front_and_back(MotorGroup::RIGHT_ALL, BASE_SPEED + K);
