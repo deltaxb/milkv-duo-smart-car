@@ -8,7 +8,8 @@
 
 const int FULL_STATE = (1 << TRACK_SENSOR_PINS) - 1;
 const int sensor_pins[][TRACK_SENSOR_PINS] = {
-  {7, 9, 10, 16}
+  {8, 9, 10, 11}
+  //{7, 9, 10, 16}
   //{7, 8, 9, 10, 11, 16}
   //{6, 7, 8, 9, 10, 11, 16, 17}
   //{21, 22, 15, 14, 17, 29, 31, 32}

@@ -63,7 +63,7 @@ namespace FOLLOW {
   //0 white
   int front_track_senor = 0;
   void turn(float degree) {
-    const int BASE_SPEED = MAX_SPEED / 2.5;
+    const int BASE_SPEED = MAX_SPEED / 2;
     const float K = degree * BASE_SPEED;
     move_front_and_back(MotorGroup::LEFT_ALL, BASE_SPEED - K);
     move_front_and_back(MotorGroup::RIGHT_ALL, BASE_SPEED + K);
@@ -150,7 +150,7 @@ namespace FOLLOW {
       printf("no black line!\n");
       return;
     }*/
-    const int MAXT = 1000 * 60;
+    const int MAXT = 1000 * 300;
     int t = 0;
     while (t < MAXT) {
       int result = loop_follow();
